@@ -22,6 +22,9 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+
+
+
 // Multer setup
 const storage = multer.diskStorage({
   destination: (req, file, cb) => cb(null, "public/uploads"),
